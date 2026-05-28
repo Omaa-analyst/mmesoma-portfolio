@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mmesoma Victory Nwachukwu | Data Scientist, AI Expert &amp; Writer</title>
+  <meta name="description" content="Data Scientist, AI Expert, Data Analyst &amp; Writer — Transforming complex data into intelligent solutions and compelling stories." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./src/styles.css" />
+</head>
+<body data-theme="dark">
+
+<!-- ═══════════════════════════════════════
+     NAVIGATION
+═══════════════════════════════════════ -->
+<nav>
+  <a href="#" class="logo">MVN.</a>
+
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#stack">Stack</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <!-- Theme toggle: ☀ = light, ⊡ = system, ☽ = dark -->
+    <div class="theme-btn">
+      <button id="btn-light"  onclick="setTheme('light')"  title="Light mode">☀</button>
+      <button id="btn-system" onclick="setTheme('system')" title="System preference" class="active">⊡</button>
+      <button id="btn-dark"   onclick="setTheme('dark')"   title="Dark mode">☽</button>
+    </div>
+    <a href="#contact" class="nav-cta">Let's Talk ↓</a>
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════════
+     HERO
+═══════════════════════════════════════ -->
+<section class="hero" id="home">
+
+  <!-- Left: text content -->
+  <div class="hero-left">
+    <div class="hero-eye fi d1">Data Scientist · AI Expert · Writer</div>
+
+    <h1 class="fi d2">
+      Mmesoma <span class="hi">Victory</span><br/>Nwachukwu
+    </h1>
+
+    <!-- Animated role — article updates dynamically ("a" / "an") -->
+    <div class="role-wrap fi d3">
+      <span class="role-prefix">I am</span>
+      <span id="roleArticle">a</span>
+      <span class="role-text" id="roleText">Data Scientist</span>
+    </div>
+
+    <p class="hero-sub fi d4">
+      Turning complex datasets into intelligent, actionable solutions —
+      bridging data, AI, business strategy, and the written word to drive
+      measurable impact.
+    </p>
+
+    <div class="hero-btns fi d5">
+      <a href="#contact" class="btn-fill">Let's Talk ↓</a>
+      <a href="#projects" class="btn-ghost">View My Work</a>
+    </div>
+
+    <!-- Social icons -->
+    <div class="hero-socials fi d5">
+      <!-- GitHub -->
+      <a class="hsoc" href="https://github.com/Omaa-analyst" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+        </svg>
+      </a>
+      <!-- LinkedIn -->
+      <a class="hsoc" href="https://www.linkedin.com/in/mmesoma-nwachukwu-95a254277" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/>
+          <rect x="2" y="9" width="4" height="12"/>
+          <circle cx="4" cy="4" r="2"/>
+        </svg>
+      </a>
+      <!-- Medium -->
+      <a class="hsoc" href="https://medium.com/@victorymmesoma003" target="_blank" rel="noopener" aria-label="Medium">
+        <svg viewBox="0 0 24 24" fill="currentColor" stroke="none">
+          <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+        </svg>
+      </a>
+      <!-- Email -->
+      <a class="hsoc" href="mailto:victorymmesoma003@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Right: photo -->
+  <div class="hero-right fi d3">
+    <div class="avatar-wrap">
+      <div class="avatar-circle">
+        <img src="./src/assets/photo.jpg" alt="Mmesoma Victory Nwachukwu — Data Scientist, AI Expert &amp; Writer" />
+      </div>
+      <div class="avatar-ring"></div>
+      <div class="avail-badge">
+        <span class="avail-dot"></span>
+        Available for opportunities
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="arr"></div>
+  </div>
+
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     ABOUT
+═══════════════════════════════════════ -->
+<section class="about" id="about">
+  <div class="about-grid">
+
+    <!-- Left: bio text -->
+    <div class="reveal">
+      <p class="sec-eye" style="text-align:left;">About Me</p>
+      <h2 class="about-heading">
+        Building the <span class="hi">future</span>,<br/>one insight at a time.
+      </h2>
+      <p class="about-p">
+        A <strong>dynamic and multidisciplinary professional</strong> with expertise in data science,
+        data analytics, artificial intelligence, business strategy, digital innovation, and
+        research-driven problem solving. Also a <strong>writer</strong> — crafting compelling
+        narratives that translate complex ideas into clear, engaging stories for diverse audiences.
+      </p>
+      <p class="about-p">
+        Passionate about leveraging <strong>data, AI, technology, and business intelligence</strong>
+        to develop intelligent solutions that drive informed decision-making, operational efficiency,
+        and measurable impact.
+      </p>
+      <p class="about-p">
+        Skilled in <strong>data visualization, dashboard development, predictive analytics</strong>,
+        and transforming complex datasets into clear, actionable insights across public and private
+        sector initiatives.
+      </p>
+      <div class="pills">
+        <span class="pill">Data Science</span>
+        <span class="pill">Business Intelligence</span>
+        <span class="pill">Predictive Analytics</span>
+        <span class="pill">Dashboard Development</span>
+        <span class="pill">Digital Innovation</span>
+        <span class="pill">AI-Driven Solutions</span>
+        <span class="pill">Research &amp; Reporting</span>
+        <span class="pill">Data Visualization</span>
+        <span class="pill">Content Writing</span>
+        <span class="pill">Data Storytelling</span>
+      </div>
+    </div>
+
+    <!-- Right: stats + code card -->
+    <div class="reveal">
+      <!-- 2×2 stat grid -->
+      <div class="stats-box">
+        <div class="stat-cell"><div class="stat-n">3+</div><div class="stat-l">Years Experience</div></div>
+        <div class="stat-cell"><div class="stat-n">6+</div><div class="stat-l">Projects Delivered</div></div>
+        <div class="stat-cell"><div class="stat-n">2+</div><div class="stat-l">Companies Served</div></div>
+        <div class="stat-cell"><div class="stat-n">6+</div><div class="stat-l">Articles Published</div></div>
+      </div>
+
+      <!-- Fake code block -->
+      <div class="code-card">
+        <div class="code-bar">
+          <span class="cd cd-r"></span>
+          <span class="cd cd-y"></span>
+          <span class="cd cd-g"></span>
+          <span class="fn">mmesoma.config.ts</span>
+        </div>
+        <div><span class="cm">// mmesoma.config.ts</span></div>
+        <div><span class="kw">export const</span> profile = {</div>
+        <div>&nbsp;&nbsp;name: <span class="str">"Mmesoma Victory Nwachukwu"</span>,</div>
+        <div>&nbsp;&nbsp;role: <span class="str">"Data Scientist, AI Expert &amp; Writer"</span>,</div>
+        <div>&nbsp;&nbsp;skills: [</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"Python"</span>, <span class="str">"SQL"</span>, <span class="str">"Power BI"</span>,</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"Machine Learning"</span>, <span class="str">"Writing"</span>,</div>
+        <div>&nbsp;&nbsp;],</div>
+        <div>&nbsp;&nbsp;location: <span class="str">"Abuja, Nigeria"</span>,</div>
+        <div>&nbsp;&nbsp;available: <span class="bl">true</span>,</div>
+        <div>};</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     TECH STACK
+═══════════════════════════════════════ -->
+<section id="stack">
+  <p class="sec-eye reveal">Arsenal</p>
+  <h2 class="sec-title reveal">Tech <span class="hi">Stack</span></h2>
+
+  <div class="stack-grid reveal">
+    <div class="sg">
+      <h4>Languages</h4>
+      <div class="stags">
+        <span class="stag">Python</span>
+        <span class="stag">SQL</span>
+      </div>
+    </div>
+    <div class="sg">
+      <h4>Data &amp; AI</h4>
+      <div class="stags">
+        <span class="stag">Pandas</span><span class="stag">NumPy</span>
+        <span class="stag">Scikit-learn</span><span class="stag">Matplotlib</span>
+        <span class="stag">Seaborn</span><span class="stag">TensorFlow</span>
+      </div>
+    </div>
+    <div class="sg">
+      <h4>BI &amp; Visualization</h4>
+      <div class="stags">
+        <span class="stag">Power BI</span><span class="stag">Tableau</span>
+        <span class="stag">Microsoft Excel</span><span class="stag">DAX</span>
+      </div>
+    </div>
+    <div class="sg">
+      <h4>Analytics Methods</h4>
+      <div class="stags">
+        <span class="stag">Predictive Analytics</span><span class="stag">Statistical Analysis</span>
+        <span class="stag">Regression</span><span class="stag">Classification</span>
+        <span class="stag">EDA</span>
+      </div>
+    </div>
+    <div class="sg">
+      <h4>Business &amp; Strategy</h4>
+      <div class="stags">
+        <span class="stag">Business Intelligence</span><span class="stag">Revenue Analytics</span>
+        <span class="stag">Process Optimization</span><span class="stag">KPI Reporting</span>
+      </div>
+    </div>
+    <div class="sg">
+      <h4>Writing &amp; Comms</h4>
+      <div class="stags">
+        <span class="stag">Long-form Writing</span><span class="stag">Technical Writing</span>
+        <span class="stag">Data Storytelling</span><span class="stag">Content Strategy</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     EXPERIENCE
+═══════════════════════════════════════ -->
+<section class="exp-sec" id="experience">
+  <p class="sec-eye reveal">Career</p>
+  <h2 class="sec-title reveal">Professional <span class="hi">Experience</span></h2>
+
+  <div class="timeline">
+
+    <!-- Job 1: DataFronteira (LEFT) -->
+    <div class="tl-item reveal">
+      <div class="tl-card left">
+        <span class="tl-date">Present</span>
+        <div class="tl-role">Data Scientist</div>
+        <div class="tl-co">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          DataFronteira Ltd. &nbsp;·&nbsp;
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Abuja, Nigeria
+        </div>
+        <ul class="tl-list">
+          <li>Developing predictive models and ML pipelines for strategic business decisions</li>
+          <li>Transforming large datasets into actionable business intelligence</li>
+          <li>Collaborating cross-functionally to translate data findings into strategy</li>
+        </ul>
+      </div>
+      <div></div>
+      <div class="tl-dot"></div>
+    </div>
+
+    <!-- Job 2: Digital Dreams (RIGHT) -->
+    <div class="tl-item reveal">
+      <div></div>
+      <div class="tl-card right">
+        <span class="tl-date">Previous</span>
+        <div class="tl-role">Data Analyst</div>
+        <div class="tl-co">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Digital Dreams &nbsp;·&nbsp;
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Anambra, Nigeria
+        </div>
+        <ul class="tl-list">
+          <li>Designed interactive Power BI &amp; Excel dashboards for performance monitoring</li>
+          <li>Delivered analytical reports identifying growth trends and opportunities</li>
+          <li>Supported stakeholder decisions with data-backed insight presentations</li>
+        </ul>
+      </div>
+      <div class="tl-dot"></div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     PROJECTS
+═══════════════════════════════════════ -->
+<section id="projects">
+  <div class="proj-header reveal">
+    <div>
+      <p class="proj-eye">Portfolio</p>
+      <h2 class="proj-ttl">Featured <span class="hi">Projects</span></h2>
+    </div>
+    <a href="https://github.com/Omaa-analyst" target="_blank" class="view-all">
+      View all on GitHub →
+    </a>
+  </div>
+
+  <!-- Filter buttons -->
+  <div class="filters reveal">
+    <button class="fb on" onclick="filter('all', this)">All</button>
+    <button class="fb" onclick="filter('ai', this)">AI / ML</button>
+    <button class="fb" onclick="filter('da', this)">Data Analytics</button>
+    <button class="fb" onclick="filter('bi', this)">Power BI</button>
+    <button class="fb" onclick="filter('st', this)">Statistics</button>
+  </div>
+
+  <!-- Project cards grid -->
+  <div class="pgrid" id="pgrid">
+
+    <a class="pcard" href="https://github.com/Omaa-analyst/PCOS-Prediction" target="_blank" data-cat="ai">
+      <div class="pcard-top">
+        <span class="pcat cat-ai">AI / ML</span>
+        <span class="pext">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+            <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+          </svg>
+        </span>
+      </div>
+      <div class="picon-row">
+        <div class="picon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <div class="pname">PCOS Prediction Model</div>
+      </div>
+      <p class="pdesc">End-to-end ML pipeline predicting Polycystic Ovary Syndrome. Preprocessing, feature engineering, model training, confusion matrix evaluation, and EDA with correlation heatmaps.</p>
+      <div class="ptags"><span class="ptag">Python</span><span class="ptag">Scikit-learn</span><span class="ptag">ML</span><span class="ptag">Healthcare</span></div>
+    </a>
+
+    <a class="pcard" href="https://github.com/Omaa-analyst/Sales-Market-of-the-year" target="_blank" data-cat="da">
+      <div class="pcard-top">
+        <span class="pcat cat-da">Data Analytics</span>
+        <span class="pext"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+      </div>
+      <div class="picon-row">
+        <div class="picon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
+        <div class="pname">Sales Market of the Year</div>
+      </div>
+      <p class="pdesc">Global retail sales analysis — data cleaning, seasonal segmentation, country-level trends, top-product ranking, and rich visual storytelling.</p>
+      <div class="ptags"><span class="ptag">Python</span><span class="ptag">Pandas</span><span class="ptag">Data Cleaning</span><span class="ptag">Visualization</span></div>
+    </a>
+
+    <a class="pcard" href="https://github.com/Omaa-analyst/POWER-BI-SUPERSTORE-" target="_blank" data-cat="bi">
+      <div class="pcard-top">
+        <span class="pcat cat-bi">Power BI</span>
+        <span class="pext"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+      </div>
+      <div class="picon-row">
+        <div class="picon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="18" y="3" width="4" height="18"/><rect x="10" y="8" width="4" height="13"/><rect x="2" y="13" width="4" height="8"/></svg></div>
+        <div class="pname">Superstore Dashboard I</div>
+      </div>
+      <p class="pdesc">Interactive BI dashboard — revenue, profit margins, regional performance, and customer segment analysis for executive reporting.</p>
+      <div class="ptags"><span class="ptag">Power BI</span><span class="ptag">Business Intelligence</span><span class="ptag">KPI</span></div>
+    </a>
+
+    <a class="pcard" href="https://github.com/Omaa-analyst/Power-BI-SUPERSTORE-II-" target="_blank" data-cat="bi">
+      <div class="pcard-top">
+        <span class="pcat cat-bi">Power BI</span>
+        <span class="pext"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+      </div>
+      <div class="picon-row">
+        <div class="picon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg></div>
+        <div class="pname">Superstore Dashboard II</div>
+      </div>
+      <p class="pdesc">Advanced sequel with time-series trends, CLV segmentation, drill-through capabilities, and dynamic DAX measures for self-service reporting.</p>
+      <div class="ptags"><span class="ptag">Power BI</span><span class="ptag">DAX</span><span class="ptag">Time Series</span></div>
+    </a>
+
+    <a class="pcard" href="https://github.com/Omaa-analyst/Lightning-Strikes-in-2019-in-US" target="_blank" data-cat="da">
+      <div class="pcard-top">
+        <span class="pcat cat-ev">Environmental</span>
+        <span class="pext"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+      </div>
+      <div class="picon-row">
+        <div class="picon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+        <div class="pname">Lightning Strikes 2019 (US)</div>
+      </div>
+      <p class="pdesc">Geospatial and temporal analysis of US lightning strike data — frequency distributions, regional hotspots, seasonal patterns, and environmental insights.</p>
+      <div class="ptags"><span class="ptag">Python</span><span class="ptag">Geospatial</span><span class="ptag">Environmental</span></div>
+    </a>
+
+    <a class="pcard" href="https://github.com/Omaa-analyst/statistics-students" target="_blank" data-cat="st">
+      <div class="pcard-top">
+        <span class="pcat cat-st">Statistics</span>
+        <span class="pext"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+      </div>
+      <div class="picon-row">
+        <div class="picon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+        <div class="pname">Student Statistics Analysis</div>
+      </div>
+      <p class="pdesc">Statistical study of student performance — correlations, demographics, study habits, and outcomes using hypothesis testing and visualizations.</p>
+      <div class="ptags"><span class="ptag">Python</span><span class="ptag">Statistical Analysis</span><span class="ptag">Research</span></div>
+    </a>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     BLOG
+═══════════════════════════════════════ -->
+<section class="blog-sec" id="blog">
+  <p class="sec-eye reveal">Writing</p>
+  <h2 class="sec-title reveal">From My <span class="hi">Medium</span></h2>
+  <p class="sec-sub reveal">Thoughts on data, AI, productivity, and the human experience behind the numbers.</p>
+
+  <div class="blog-grid">
+
+    <a class="blog-card reveal" href="https://medium.com/@victorymmesoma003/how-i-see-ai-a-realistic-look-at-the-future-risks-and-survival-1a2329beaf4a" target="_blank" rel="noopener">
+      <img class="blog-img" src="https://miro.medium.com/v2/resize:fill:320:214/1*PycEga5y-A0ydGxCUK3lfg.png" alt="How I See AI" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+      <div class="blog-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 22 12 12 22 2 12"/></svg></div>
+      <div class="blog-body">
+        <div class="blog-date">Feb 16, 2026</div>
+        <div class="blog-title">How I See AI: A Realistic Look at the Future, Risks, and Survival</div>
+        <p class="blog-sub">AI is everywhere — yet despite its ubiquity, the full picture is rarely discussed honestly.</p>
+        <span class="blog-link">Read on Medium →</span>
+      </div>
+    </a>
+
+    <a class="blog-card reveal" href="https://medium.com/@victorymmesoma003/when-systems-learn-to-see-the-unseen-logic-of-markets-and-machines-a80d7e1ccedc" target="_blank" rel="noopener">
+      <img class="blog-img" src="https://miro.medium.com/v2/resize:fill:320:214/1*sEJFcmAMMSe_GiTzWTGBlg.png" alt="Systems Learn to See" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+      <div class="blog-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 22 12 12 22 2 12"/></svg></div>
+      <div class="blog-body">
+        <div class="blog-date">Feb 3, 2026</div>
+        <div class="blog-title">When Systems Learn to See: The Unseen Logic of Markets and Machines</div>
+        <p class="blog-sub">Beneath the polished charts, something less obvious steers decisions.</p>
+        <span class="blog-link">Read on Medium →</span>
+      </div>
+    </a>
+
+    <a class="blog-card reveal" href="https://medium.com/@victorymmesoma003/productivity-tools-are-making-us-feel-busy-not-effective-2aad2a27e9ef" target="_blank" rel="noopener">
+      <img class="blog-img" src="https://miro.medium.com/v2/resize:fill:320:214/1*SiH966JbUiWP6opGCKbu8Q.png" alt="Productivity Tools" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+      <div class="blog-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 22 12 12 22 2 12"/></svg></div>
+      <div class="blog-body">
+        <div class="blog-date">Jan 20, 2026</div>
+        <div class="blog-title">Productivity Tools Are Making Us Feel Busy, Not Effective</div>
+        <p class="blog-sub">Why clarity matters more than calendars, AI assistants, and endless task lists.</p>
+        <span class="blog-link">Read on Medium →</span>
+      </div>
+    </a>
+
+    <a class="blog-card reveal" href="https://medium.com/@victorymmesoma003/what-clients-dont-understand-about-ai-assisted-writing-d3552d889602" target="_blank" rel="noopener">
+      <img class="blog-img" src="https://miro.medium.com/v2/resize:fill:320:214/1*u-s0u8jmmYBARxNbe-7j3w.png" alt="AI Writing" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+      <div class="blog-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 22 12 12 22 2 12"/></svg></div>
+      <div class="blog-body">
+        <div class="blog-date">Jan 9, 2026</div>
+        <div class="blog-title">What Clients Don't Understand About AI-Assisted Writing</div>
+        <p class="blog-sub">Why good writing is being mistaken for artificial, and what that says about how we value human work.</p>
+        <span class="blog-link">Read on Medium →</span>
+      </div>
+    </a>
+
+    <a class="blog-card reveal" href="https://medium.com/@victorymmesoma003/ai-is-my-writing-assistant-not-my-replacement-why-im-not-worried-e32321f6f7fd" target="_blank" rel="noopener">
+      <div class="blog-placeholder" style="display:flex"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+      <div class="blog-body">
+        <div class="blog-date">Jan 7, 2026</div>
+        <div class="blog-title">AI Is My Writing Assistant, Not My Replacement: Why I'm Not Worried</div>
+        <p class="blog-sub">Everyone keeps asking the same question: Will AI replace writers? Here is my honest answer.</p>
+        <span class="blog-link">Read on Medium →</span>
+      </div>
+    </a>
+
+    <a class="blog-card reveal" href="https://medium.com/@victorymmesoma003/5-financial-habits-im-building-in-my-20s-and-why-they-matter-76062d0dcd80" target="_blank" rel="noopener">
+      <img class="blog-img" src="https://miro.medium.com/v2/resize:fill:320:214/1*Lxt5DEtZxBtj1jIUOph9eg.png" alt="Financial Habits" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+      <div class="blog-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 22 12 12 22 2 12"/></svg></div>
+      <div class="blog-body">
+        <div class="blog-date">Jan 6, 2026</div>
+        <div class="blog-title">5 Financial Habits I'm Building in My 20s (And Why They Matter)</div>
+        <p class="blog-sub">If you grow up in Nigeria, money stops being abstract very early. Here's what I'm doing about it.</p>
+        <span class="blog-link">Read on Medium →</span>
+      </div>
+    </a>
+
+  </div>
+
+  <div style="text-align:center; margin-top:2.5rem;">
+    <a href="https://medium.com/@victorymmesoma003" target="_blank" class="btn-ghost" style="display:inline-block;">
+      View all articles on Medium →
+    </a>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     CERTIFICATIONS
+═══════════════════════════════════════ -->
+<section class="cert-sec" id="certifications">
+  <p class="sec-eye reveal">Recognition</p>
+  <h2 class="sec-title reveal">Certifications &amp; <span class="hi">Education</span></h2>
+  <p class="sec-sub reveal">Credentials that back the expertise — from global institutions to specialised programmes.</p>
+
+  <div class="cert-grid">
+
+    <div class="cert-card reveal">
+      <div class="cert-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
+        </svg>
+      </div>
+      <span class="cert-badge">DataCamp</span>
+      <div class="cert-title">Data Science Professional Certificate</div>
+      <div class="cert-issuer">DataCamp</div>
+      <p class="cert-desc">Comprehensive training in data science methodologies, Python programming, machine learning, and statistical analysis for real-world applications.</p>
+    </div>
+
+    <div class="cert-card reveal">
+      <div class="cert-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+        </svg>
+      </div>
+      <span class="cert-badge">Google · Coursera</span>
+      <div class="cert-title">Google Data Analytics Certificate</div>
+      <div class="cert-issuer">Google via Coursera</div>
+      <p class="cert-desc">Professional-grade training in data analytics, visualisation, SQL, R programming, and business intelligence — from Google's curriculum.</p>
+    </div>
+
+    <div class="cert-card reveal">
+      <div class="cert-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+        </svg>
+      </div>
+      <span class="cert-badge">Digital Dreams ICT Academy</span>
+      <div class="cert-title">Data Analytics Certificate</div>
+      <div class="cert-issuer">Digital Dreams ICT Academy</div>
+      <p class="cert-desc">Hands-on training in data analytics tools, dashboard development, and applied business intelligence using Excel, SQL, and Power BI.</p>
+    </div>
+
+    <div class="cert-card reveal">
+      <div class="cert-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
+        </svg>
+      </div>
+      <span class="cert-badge">University Degree</span>
+      <div class="cert-title">B.A. English &amp; Literary Studies</div>
+      <div class="cert-issuer">University of Nigeria, Nsukka (UNN)</div>
+      <p class="cert-desc">Academic foundation in communication, critical thinking, research methodology, and analytical writing — skills that power data storytelling.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     SERVICES
+═══════════════════════════════════════ -->
+<section class="svc-sec" id="services">
+  <p class="sec-eye reveal">What I Do</p>
+  <h2 class="sec-title reveal">My <span class="hi">Services</span></h2>
+  <p class="sec-sub reveal">From raw data to boardroom-ready intelligence — here's how I can add value to your organisation.</p>
+
+  <div class="svc-grid">
+
+    <div class="svc-card reveal">
+      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="18" y="3" width="4" height="18"/><rect x="10" y="8" width="4" height="13"/><rect x="2" y="13" width="4" height="8"/></svg></div>
+      <div class="svc-title">Data Analytics &amp; Reporting</div>
+      <p class="svc-desc">End-to-end analysis, cleaning, transformation, and reporting. Delivering clear, actionable insights from raw data to power smarter business decisions.</p>
+      <a href="#contact" class="svc-link">Work with me →</a>
+    </div>
+
+    <div class="svc-card reveal">
+      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+      <div class="svc-title">Dashboard Development</div>
+      <p class="svc-desc">Custom interactive dashboards in Power BI, Tableau, and Excel. Real-time business intelligence tailored to your KPIs and executive reporting needs.</p>
+      <a href="#contact" class="svc-link">Work with me →</a>
+    </div>
+
+    <div class="svc-card reveal">
+      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg></div>
+      <div class="svc-title">Predictive Analytics &amp; ML</div>
+      <p class="svc-desc">Machine learning models for prediction, classification, and pattern recognition — helping you anticipate trends and make proactive decisions.</p>
+      <a href="#contact" class="svc-link">Work with me →</a>
+    </div>
+
+    <div class="svc-card reveal">
+      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+      <div class="svc-title">AI-Driven Solutions</div>
+      <p class="svc-desc">Designing and deploying AI systems that automate analysis, identify opportunities, and create intelligent workflows for operational efficiency.</p>
+      <a href="#contact" class="svc-link">Work with me →</a>
+    </div>
+
+    <div class="svc-card reveal">
+      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+      <div class="svc-title">Business Strategy Consulting</div>
+      <p class="svc-desc">Strategic advisory grounded in data — from market analysis and growth planning to competitive positioning and performance optimisation.</p>
+      <a href="#contact" class="svc-link">Work with me →</a>
+    </div>
+
+    <div class="svc-card reveal">
+      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+      <div class="svc-title">Research &amp; Documentation</div>
+      <p class="svc-desc">Rigorous research, data documentation, and analytical reporting for academic, corporate, and government projects requiring evidence-based insights.</p>
+      <a href="#contact" class="svc-link">Work with me →</a>
+    </div>
+
+    <div class="svc-card reveal">
+      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+      <div class="svc-title">Writing &amp; Content Creation</div>
+      <p class="svc-desc">Thoughtful long-form writing, articles, and content that bridges data, technology, and the human experience. Published on Medium with a growing readership.</p>
+      <a href="https://medium.com/@victorymmesoma003" target="_blank" class="svc-link">Read my articles →</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     CONTACT
+═══════════════════════════════════════ -->
+<section id="contact">
+  <p class="sec-eye reveal">Get In Touch</p>
+
+  <div class="contact-wrap">
+
+    <!-- Left: info -->
+    <div class="reveal">
+      <h2 class="ctitle">Let's work <span class="hi">together</span></h2>
+      <p class="cdesc">
+        Have a project in mind, need data consulting, or want to collaborate?
+        Whether it's analytics, AI, dashboards, business strategy, or writing —
+        let's make it happen.
+      </p>
+
+      <div class="cdet">
+        <div class="cdet-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+        <div><small>Email</small><a href="mailto:victorymmesoma003@gmail.com">victorymmesoma003@gmail.com</a></div>
+      </div>
+
+      <div class="cdet">
+        <div class="cdet-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div><small>Location</small><span>Abuja, Nigeria · Open to Remote</span></div>
+      </div>
+
+      <div class="cdet">
+        <div class="cdet-icon"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg></div>
+        <div><small>Medium</small><a href="https://medium.com/@victorymmesoma003" target="_blank">@victorymmesoma003</a></div>
+      </div>
+
+      <div class="csocials">
+        <a class="csoc" href="https://www.linkedin.com/in/mmesoma-nwachukwu-95a254277" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a class="csoc" href="https://github.com/Omaa-analyst" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- Right: form -->
+    <div class="reveal">
+      <form class="cform" onsubmit="sendMsg(event)">
+        <div class="fgrp"><label class="flbl">Name</label><input class="finp" type="text" placeholder="Your name" required /></div>
+        <div class="fgrp"><label class="flbl">Email</label><input class="finp" type="email" placeholder="your@email.com" required /></div>
+        <div class="fgrp"><label class="flbl">Message</label><textarea class="ftxt" placeholder="Tell me about your project…" required></textarea></div>
+        <button type="submit" class="csend">
+          Send Message
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"/>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+          </svg>
+        </button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════ -->
+<footer>
+  <span class="foot-logo">MVN.</span>
+  <span class="foot-copy">© 2026 Mmesoma Victory Nwachukwu. All rights reserved.</span>
+  <div class="fsocs">
+    <a class="fsoc" href="https://github.com/Omaa-analyst" target="_blank" aria-label="GitHub">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+    </a>
+    <a class="fsoc" href="https://www.linkedin.com/in/mmesoma-nwachukwu-95a254277" target="_blank" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+    </a>
+    <a class="fsoc" href="https://medium.com/@victorymmesoma003" target="_blank" aria-label="Medium">
+      <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+    </a>
+    <a class="fsoc" href="mailto:victorymmesoma003@gmail.com" aria-label="Email">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    </a>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="./src/main.js"></script>
+
+</body>
+</html>
