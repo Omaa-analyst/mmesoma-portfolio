@@ -142,17 +142,35 @@ nav {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 0.82rem;
-  padding: 0.18rem 0.38rem;
+  padding: 0.28rem 0.42rem;
   border-radius: 50px;
-  transition: background 0.2s;
-  color: var(--muted);
+  transition: background 0.2s, color 0.2s;
+  color: var(--muted2);
   line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  min-height: 28px;
+}
+
+.theme-btn button svg {
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+  fill: none;
+  flex-shrink: 0;
+  /* Prevent any OS emoji color override */
+  color: inherit;
 }
 
 .theme-btn button.active {
   background: var(--purple-dim);
   color: var(--purple-l);
+}
+
+.theme-btn button:not(.active):hover {
+  color: var(--muted);
 }
 
 .nav-cta {
@@ -394,8 +412,12 @@ nav {
   font-size: 0.7rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  padding: 2rem 0 1rem;
-  width: 100%;
+  padding: 2rem 0 1.5rem;
+  /* Break out of any parent padding to sit truly centred on the viewport */
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
 }
 
