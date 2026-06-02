@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Mmesoma Victory Nwachukwu | Data Scientist, AI Expert &amp; Writer</title>
   <meta name="description" content="Data Scientist, AI Expert, Data Analyst &amp; Writer — Transforming complex data into intelligent solutions and compelling stories." />
 
@@ -22,6 +22,7 @@
 <nav>
   <a href="#" class="logo">MVN.</a>
 
+  <!-- Desktop navigation links -->
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#stack">Stack</a></li>
@@ -34,15 +35,33 @@
   </ul>
 
   <div class="nav-right">
-    <!-- Theme toggle: ☀ = light, ⊡ = system, ☽ = dark -->
+    <!-- Theme toggle -->
     <div class="theme-btn">
       <button id="btn-light"  onclick="setTheme('light')"  title="Light mode">☀</button>
       <button id="btn-system" onclick="setTheme('system')" title="System preference" class="active">⊡</button>
       <button id="btn-dark"   onclick="setTheme('dark')"   title="Dark mode">☽</button>
     </div>
     <a href="#contact" class="nav-cta">Let's Talk ↓</a>
+    <!-- Hamburger button — visible on tablet & mobile only -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </div>
 </nav>
+
+<!-- Mobile navigation drawer -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#about">About</a>
+  <a href="#stack">Stack</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#blog">Blog</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</div>
 
 
 <!-- ═══════════════════════════════════════
@@ -319,40 +338,6 @@
   </div>
 </section>
 
-<!-- Volunteer -->
-<div style="max-width:960px;margin:0 auto;padding:0 6vw 4rem;">
-  <div style="background:var(--card2);border:1px solid var(--border);border-radius:14px;padding:1.5rem 1.75rem;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:1rem;">
-    <div>
-      <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:.5rem;">
-        <span style="font-family:var(--head);font-size:1rem;font-weight:700;color:var(--text);">Social Media Manager</span>
-        <span style="padding:.18rem .7rem;background:var(--purple-dim);border:1px solid rgba(192,132,252,.22);border-radius:50px;font-size:.72rem;color:var(--purple-l);font-weight:500;">Volunteer</span>
-      </div>
-      <div style="font-size:.82rem;color:var(--muted);margin-bottom:.9rem;display:flex;align-items:center;gap:.4rem;">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-        Yadiba Media &nbsp;·&nbsp;
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        Remote
-      </div>
-      <ul style="list-style:none;padding:0;margin:0;">
-        <li style="font-size:.85rem;color:var(--muted);padding:3px 0 3px 1rem;position:relative;font-weight:300;">
-          <span style="position:absolute;left:0;top:.65rem;width:5px;height:5px;background:var(--purple);border-radius:50%;display:block;"></span>
-          Tracked and analysed engagement metrics across platforms to guide content strategy and improve audience reach.
-        </li>
-        <li style="font-size:.85rem;color:var(--muted);padding:3px 0 3px 1rem;position:relative;font-weight:300;">
-          <span style="position:absolute;left:0;top:.65rem;width:5px;height:5px;background:var(--purple);border-radius:50%;display:block;"></span>
-          Generated data-driven performance reports that informed campaign decisions and optimised posting schedules.
-        </li>
-        <li style="font-size:.85rem;color:var(--muted);padding:3px 0 3px 1rem;position:relative;font-weight:300;">
-          <span style="position:absolute;left:0;top:.65rem;width:5px;height:5px;background:var(--purple);border-radius:50%;display:block;"></span>
-          Applied analytical thinking to social media operations — monitoring trends, measuring ROI, and identifying growth opportunities.
-        </li>
-      </ul>
-    </div>
-    <div style="text-align:right;flex-shrink:0;">
-      <span style="font-size:.75rem;color:var(--muted2);font-style:italic;">Remote &nbsp;·&nbsp; Stipend-based</span>
-    </div>
-  </div>
-</div>
 
 <!-- ═══════════════════════════════════════
      PROJECTS

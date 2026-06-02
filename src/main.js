@@ -1,3 +1,63 @@
+
+
+/* ══════════════════════════════════════════════════════
+   0. HAMBURGER MENU
+   ──────────────────────────────────────────────────────
+   - Toggle mobile nav drawer open/closed
+   - Close when a nav link is clicked (smooth scroll)
+   - Close when clicking outside the menu
+   - Animate burger → X icon
+══════════════════════════════════════════════════════ */
+(function initHamburger() {
+  const btn     = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+  if (!btn || !mobileNav) return;
+
+  function openMenu() {
+    btn.classList.add('open');
+    btn.setAttribute('aria-expanded', 'true');
+    mobileNav.classList.add('open');
+    document.body.style.overflow = 'hidden'; // prevent scroll behind menu
+  }
+
+  function closeMenu() {
+    btn.classList.remove('open');
+    btn.setAttribute('aria-expanded', 'false');
+    mobileNav.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  // Toggle on burger click
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    btn.classList.contains('open') ? closeMenu() : openMenu();
+  });
+
+  // Close on nav link click
+  mobileNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Close on outside click
+  document.addEventListener('click', (e) => {
+    if (mobileNav.classList.contains('open') &&
+        !mobileNav.contains(e.target) &&
+        !btn.contains(e.target)) {
+      closeMenu();
+    }
+  });
+
+  // Close on resize to desktop
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 1024) closeMenu();
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeMenu();
+  });
+})();
+
 /* ═══════════════════════════════════════════════════════
    MMESOMA VICTORY NWACHUKWU — PORTFOLIO JAVASCRIPT
    ─────────────────────────────────────────────────────
@@ -182,6 +242,10 @@ function filter(category, clickedBtn) {
     card.style.display = matches ? 'flex' : 'none';
   });
 }
+
+// Expose setTheme to HTML onclick attributes
+// (needed because type="module" scopes functions away from global window)
+window.setTheme = setTheme;
 
 // Expose filter to HTML onclick attributes
 window.filter = filter;
