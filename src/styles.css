@@ -402,22 +402,23 @@ nav {
 
 /* Scroll cue */
 .scroll-hint {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0 1.5rem;
   color: var(--muted2);
   font-size: 0.7rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  padding: 2rem 0 1.5rem;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
+}
+
+.scroll-hint span {
+  display: block;
+  margin-bottom: 8px;
 }
 
 .arr {
+  display: inline-block;
   width: 18px; height: 18px;
   border-right: 2px solid var(--muted2);
   border-bottom: 2px solid var(--muted2);
