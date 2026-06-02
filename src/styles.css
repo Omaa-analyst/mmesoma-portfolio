@@ -74,7 +74,6 @@ body {
   font-family: var(--font);
   font-size: 16px;
   line-height: 1.7;
-  overflow-x: hidden;
   transition: background 0.3s, color 0.3s;
 }
 
@@ -413,11 +412,8 @@ nav {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   padding: 2rem 0 1.5rem;
-  /* Break out of any parent padding to sit truly centred on the viewport */
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -1217,7 +1213,8 @@ footer {
 ──────────────────────────────────────────────────────── */
 
 /* Prevent horizontal scroll globally */
-html, body { overflow-x: hidden; max-width: 100%; }
+html { overflow-x: hidden; }
+body { max-width: 100%; }
 
 /* ── HAMBURGER MENU ──────────────────────────────────── */
 .hamburger {
