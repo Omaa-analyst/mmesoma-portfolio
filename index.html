@@ -11,6 +11,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
+  <!-- Favicon: MVN initials in purple -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230d0a14'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='Arial Black%2C Arial%2C sans-serif' font-weight='900' font-size='11' fill='%23e879f9' letter-spacing='-0.5'%3EMVN%3C/text%3E%3C/svg%3E" />
+
   <!-- Styles -->
   <link rel="stylesheet" href="./src/styles.css" />
 </head>
@@ -61,6 +64,15 @@
   <a href="#certifications">Certifications</a>
   <a href="#services">Services</a>
   <a href="#contact">Contact</a>
+  <!-- Theme toggle inside mobile menu -->
+  <div class="mob-theme-row">
+    <span class="mob-theme-label">Theme</span>
+    <div class="theme-btn mob-theme-btn">
+      <button id="mob-btn-light"  onclick="setTheme('light')"  title="Light mode">☀</button>
+      <button id="mob-btn-system" onclick="setTheme('system')" title="System preference">⊡</button>
+      <button id="mob-btn-dark"   onclick="setTheme('dark')"   title="Dark mode">☽</button>
+    </div>
+  </div>
 </div>
 
 
@@ -135,13 +147,14 @@
       </div>
   </div>
 
-  <!-- Scroll indicator -->
-  <div class="scroll-hint">
-    <span>Scroll</span>
-    <div class="arr"></div>
-  </div>
 
 </section>
+
+<!-- Scroll indicator — outside hero, always centered -->
+<div class="scroll-hint">
+  <span>Scroll</span>
+  <div class="arr"></div>
+</div>
 
 
 <!-- ═══════════════════════════════════════

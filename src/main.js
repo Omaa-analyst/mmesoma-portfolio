@@ -86,9 +86,12 @@ function applyTheme(choice) {
   // Apply to <body data-theme="..."> — CSS variables react automatically
   document.body.setAttribute('data-theme', resolved);
 
-  // Highlight the active button in the toggle group
+  // Highlight the active button in both desktop and mobile toggle groups
   ['light', 'system', 'dark'].forEach(x => {
-    document.getElementById('btn-' + x).classList.toggle('active', x === choice);
+    const desk = document.getElementById('btn-' + x);
+    const mob  = document.getElementById('mob-btn-' + x);
+    if (desk) desk.classList.toggle('active', x === choice);
+    if (mob)  mob.classList.toggle('active', x === choice);
   });
 
   // Persist choice

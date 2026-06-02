@@ -178,7 +178,7 @@ nav {
   grid-template-columns: 1fr 420px;
   gap: 3rem;
   align-items: center;
-  padding: 7rem 6vw 4rem;
+  padding: 7rem 6vw 2rem;
   position: relative;
   overflow: hidden;
 }
@@ -214,11 +214,7 @@ nav {
   gap: 10px;
 }
 
-.hero-eye::before {
-  content: "";
-  width: 28px; height: 2px;
-  background: linear-gradient(90deg, var(--purple), var(--rose));
-}
+/* hero-eye decorative line removed */
 
 .hero h1 {
   font-family: var(--head);
@@ -389,18 +385,18 @@ nav {
 
 /* Scroll cue */
 .scroll-hint {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 6px;
   color: var(--muted2);
   font-size: 0.7rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  padding: 2rem 0 1rem;
+  width: 100%;
+  text-align: center;
 }
 
 .arr {
@@ -1369,7 +1365,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
   .hero-sub { margin: 0 auto 2rem; }
 
   /* Hide scroll hint on mobile — saves space */
-  .scroll-hint { display: none; }
+  /* scroll-hint visible on all screens */
 
   /* ABOUT */
   .about-grid { grid-template-columns: 1fr; gap: 2rem; }
@@ -1472,4 +1468,25 @@ html, body { overflow-x: hidden; max-width: 100%; }
 
   /* Code card scrollable */
   .code-card { font-size: 0.68rem; }
+}
+
+/* ── MOBILE THEME TOGGLE ROW ──────────────────────────── */
+.mob-theme-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0 0.5rem;
+  border-top: 1px solid var(--border);
+  margin-top: 0.25rem;
+}
+
+.mob-theme-label {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.mob-theme-btn {
+  /* Reuse existing .theme-btn styles, just override margin */
+  margin: 0;
 }
