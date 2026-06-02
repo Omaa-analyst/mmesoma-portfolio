@@ -337,48 +337,40 @@ nav {
 
 .avatar-wrap { position: relative; width: 340px; height: 340px; }
 
+/* Gradient border: applied to the wrap itself as a background,
+   with a 3px padding gap so the image sits clean inside */
 .avatar-circle {
   width: 340px; height: 340px;
   border-radius: 50%;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 0 60px rgba(192,132,252,0.28), 0 0 120px rgba(192,132,252,0.1);
-}
-
-/* Gradient border trick */
-.avatar-circle::before {
-  content: "";
-  position: absolute;
-  inset: -3px;
-  border-radius: 50%;
+  padding: 3px;
   background: linear-gradient(135deg, var(--purple), var(--rose), var(--teal));
-  z-index: 0;
+  box-shadow: 0 0 60px rgba(192,132,252,0.28), 0 0 120px rgba(192,132,252,0.1);
+  position: relative;
 }
 
+/* No pseudo-elements needed — image clips cleanly */
 .avatar-circle img {
-  position: relative;
-  z-index: 1;
-  width: calc(100% - 6px);
-  height: calc(100% - 6px);
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center 15%;
   border-radius: 50%;
-  margin: 3px;
   display: block;
   transition: transform 0.4s ease;
   filter: brightness(1.04) contrast(1.06) saturate(1.08);
+  /* Clip the photo inside its own circle, isolating it from the gradient */
+  background: var(--bg);
 }
 
 .avatar-circle:hover img { transform: scale(1.03); }
 
-/* Bottom shadow overlay */
+/* Subtle vignette at the bottom — kept for depth */
 .avatar-circle::after {
   content: "";
   position: absolute;
-  inset: 0;
+  inset: 3px;
   border-radius: 50%;
-  background: radial-gradient(ellipse at 50% 100%, rgba(0,0,0,0.25) 0%, transparent 60%);
-  z-index: 2;
+  background: radial-gradient(ellipse at 50% 100%, rgba(0,0,0,0.18) 0%, transparent 55%);
   pointer-events: none;
 }
 
