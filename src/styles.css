@@ -408,7 +408,7 @@ nav {
  }
 
 /* ── 6. SECTION UTILITIES ───────────────────────────── */
-section { padding: 7rem 6vw; }
+section { padding: 8rem 6vw 7rem; }
 
 /* Scroll indicator between hero and about */
 .scroll-hint {
@@ -442,6 +442,7 @@ section { padding: 7rem 6vw; }
   font-weight: 600;
   margin-bottom: 0.9rem;
   text-align: center;
+  display: block;
 }
 
 .sec-title {
@@ -599,6 +600,7 @@ section { padding: 7rem 6vw; }
   gap: 3rem 4rem;
   max-width: 900px;
   margin: 0 auto;
+  padding-bottom: 1rem;
 }
 
 .sg h4 {
@@ -629,7 +631,7 @@ section { padding: 7rem 6vw; }
 .timeline {
   position: relative;
   max-width: 960px;
-  margin: 3rem auto 0;
+  margin: 3rem auto 1rem;
 }
 
 /* The vertical line */
@@ -812,6 +814,7 @@ section { padding: 7rem 6vw; }
   gap: 1.2rem;
   max-width: 1100px;
   margin: 0 auto;
+  padding-bottom: 1rem;
 }
 
 .pcard {
@@ -887,6 +890,7 @@ section { padding: 7rem 6vw; }
   gap: 1.4rem;
   max-width: 1100px;
   margin: 0 auto;
+  padding-bottom: 1rem;
 }
 
 .blog-card {
@@ -937,6 +941,7 @@ section { padding: 7rem 6vw; }
   gap: 1.2rem;
   max-width: 1100px;
   margin: 0 auto;
+  padding-bottom: 1rem;
 }
 
 .cert-card {
@@ -1002,6 +1007,7 @@ section { padding: 7rem 6vw; }
   gap: 1.2rem;
   max-width: 1100px;
   margin: 0 auto;
+  padding-bottom: 1rem;
 }
 
 .svc-card {
@@ -1298,7 +1304,7 @@ body { max-width: 100%; }
 @media (max-width: 1024px) {
 
   /* Global spacing */
-  section { padding: 6rem 5vw; }
+  section { padding: 7rem 5vw 6rem; }
 
   /* NAV */
   .nav-links { display: none; }
@@ -1352,7 +1358,7 @@ body { max-width: 100%; }
 @media (max-width: 767px) {
 
   /* Global spacing */
-  section { padding: 5rem 5vw; }
+  section { padding: 6rem 5vw 5rem; }
 
   /* NAV */
   nav { padding: 0.9rem 5vw; }
