@@ -408,7 +408,28 @@ nav {
  }
 
 /* ── 6. SECTION UTILITIES ───────────────────────────── */
-section { padding: 8rem 6vw 7rem; }
+section { padding: 9rem 6vw 8rem; }
+
+/* ── SECTION DIVIDERS — subtle top border on every section ─────────────────
+   Prevents adjacent same-colour sections from appearing merged             */
+section + section {
+  border-top: 1px solid var(--border);
+}
+
+/* Extra top breathing room for sections that follow dense content */
+.exp-sec,
+.cert-sec,
+.svc-sec,
+#contact {
+  padding-top: 10rem;
+}
+
+#stack,
+#projects,
+.blog-sec {
+  padding-top: 10rem;
+}
+
 
 /* Scroll indicator between hero and about */
 .scroll-hint {
@@ -440,6 +461,7 @@ section { padding: 8rem 6vw 7rem; }
   color: var(--purple);
   text-transform: uppercase;
   font-weight: 600;
+  margin-top: 0;
   margin-bottom: 0.9rem;
   text-align: center;
   display: block;
@@ -1304,7 +1326,9 @@ body { max-width: 100%; }
 @media (max-width: 1024px) {
 
   /* Global spacing */
-  section { padding: 7rem 5vw 6rem; }
+  section { padding: 8rem 5vw 7rem; }
+
+  .exp-sec, .cert-sec, .svc-sec, #contact, #stack, #projects, .blog-sec { padding-top: 9rem; }
 
   /* NAV */
   .nav-links { display: none; }
@@ -1358,7 +1382,9 @@ body { max-width: 100%; }
 @media (max-width: 767px) {
 
   /* Global spacing */
-  section { padding: 6rem 5vw 5rem; }
+  section { padding: 7rem 5vw 6rem; }
+
+  .exp-sec, .cert-sec, .svc-sec, #contact, #stack, #projects, .blog-sec { padding-top: 7rem; }
 
   /* NAV */
   nav { padding: 0.9rem 5vw; }
