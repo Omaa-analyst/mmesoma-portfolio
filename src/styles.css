@@ -408,7 +408,31 @@ nav {
  }
 
 /* ── 6. SECTION UTILITIES ───────────────────────────── */
-section { padding: 6rem 6vw; }
+section { padding: 7rem 6vw; }
+
+/* Scroll indicator between hero and about */
+.scroll-hint {
+  background: var(--bg);
+  text-align: center;
+  padding: 2.5rem 0;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted2);
+}
+
+.scroll-hint span { display: block; margin-bottom: 10px; }
+
+.arr {
+  display: inline-block;
+  width: 10px; height: 10px;
+  border-right: 2px solid var(--muted2);
+  border-bottom: 2px solid var(--muted2);
+  transform: rotate(45deg);
+  animation: bob 0.9s infinite alternate;
+}
+
+@keyframes bob { to { transform: rotate(45deg) translateY(5px); } }
 
 .sec-eye {
   font-size: 0.75rem;
@@ -416,7 +440,7 @@ section { padding: 6rem 6vw; }
   color: var(--purple);
   text-transform: uppercase;
   font-weight: 600;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.9rem;
   text-align: center;
 }
 
@@ -428,7 +452,7 @@ section { padding: 6rem 6vw; }
   letter-spacing: -0.03em;
   text-align: center;
   color: var(--text);
-  margin-bottom: 0.9rem;
+  margin-bottom: 1.2rem;
 }
 
 .sec-title .hi {
@@ -442,7 +466,7 @@ section { padding: 6rem 6vw; }
   color: var(--muted);
   text-align: center;
   max-width: 500px;
-  margin: 0 auto 3.5rem;
+  margin: 0 auto 4rem;
   font-weight: 300;
   font-size: 0.92rem;
 }
@@ -1273,10 +1297,12 @@ body { max-width: 100%; }
 /* ── TABLET: 768px – 1024px ──────────────────────────── */
 @media (max-width: 1024px) {
 
+  /* Global spacing */
+  section { padding: 6rem 5vw; }
+
   /* NAV */
   .nav-links { display: none; }
   .hamburger { display: flex; }
-
   /* HERO — two-col but tighter */
   .hero {
     grid-template-columns: 1fr 320px;
@@ -1326,7 +1352,7 @@ body { max-width: 100%; }
 @media (max-width: 767px) {
 
   /* Global spacing */
-  section { padding: 4rem 5vw; }
+  section { padding: 5rem 5vw; }
 
   /* NAV */
   nav { padding: 0.9rem 5vw; }
