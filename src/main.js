@@ -263,23 +263,53 @@ window.filter = filter;
    - NOTE: To actually send emails, connect to a service
      like Formspree, EmailJS, or Netlify Forms
 ══════════════════════════════════════════════════════ */
-function sendMsg(event) {
-  event.preventDefault(); // Stop form from reloading the page
+async function sendMsg(event) {
+  event.preventDefault();
 
-  const btn = event.target.querySelector('.csend');
+  const form = event.target;
+  const btn  = form.querySelector('.csend');
   const originalHTML = btn.innerHTML;
+  const data = new FormData(form);
 
-  // Success state
-  btn.textContent = 'Message Sent ✓';
-  btn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
+  // Sending state
+  btn.textContent = 'Sending...';
   btn.disabled = true;
+  btn.style.opacity = '0.75';
 
-  // Reset after 3.5 seconds
-  setTimeout(() => {
-    btn.innerHTML = originalHTML;
-    btn.style.background = '';
-    btn.disabled = false;
-  }, 3500);
+  try {
+    const res = await fetch('https://formspree.io/f/mkgagjdr', {
+      method:  'POST',
+      body:    data,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (res.ok) {
+      // Success
+      btn.textContent = 'Message Sent ✓';
+      btn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
+      btn.style.opacity = '1';
+      form.reset();
+
+      setTimeout(() => {
+        btn.innerHTML = originalHTML;
+        btn.style.background = '';
+        btn.disabled = false;
+      }, 4000);
+    } else {
+      throw new Error('Server error');
+    }
+  } catch (err) {
+    // Error state
+    btn.textContent = 'Failed — please try again';
+    btn.style.background = 'linear-gradient(135deg, #ef4444, #dc2626)';
+    btn.style.opacity = '1';
+
+    setTimeout(() => {
+      btn.innerHTML = originalHTML;
+      btn.style.background = '';
+      btn.disabled = false;
+    }, 4000);
+  }
 }
 
 // Expose sendMsg to HTML onsubmit attribute
