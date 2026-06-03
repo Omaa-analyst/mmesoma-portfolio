@@ -197,20 +197,12 @@ nav {
   align-items: center;
   padding: 7rem 6vw 6rem;
   position: relative;
-  overflow: visible;
-}
-
-/* Clip only the glow blobs, not the scroll hint */
-.hero-blobs {
-  position: absolute;
-  inset: 0;
   overflow: hidden;
-  pointer-events: none;
-  z-index: 0;
 }
 
-/* Background glow blobs — inside .hero-blobs which has overflow:hidden */
-.hero-blob-1 {
+/* Background glow blobs */
+.hero::before {
+  content: "";
   position: absolute;
   top: -200px; right: -100px;
   width: 600px; height: 600px;
@@ -218,7 +210,8 @@ nav {
   pointer-events: none;
 }
 
-.hero-blob-2 {
+.hero::after {
+  content: "";
   position: absolute;
   bottom: -100px; left: 10%;
   width: 400px; height: 400px;
@@ -407,40 +400,12 @@ nav {
 
 /* Available badge removed */ 50% { opacity: 0.3; } }
 
-/* Scroll cue — always centered across all screen sizes */
-.scroll-hint {
-  position: absolute;
-  bottom: 1.75rem;
-  left: 0;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  color: var(--muted2);
-  font-size: 0.7rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  white-space: nowrap;
-  z-index: 10;
-  pointer-events: none;
-}
 
-.scroll-hint span {
-  display: block;
-}
 
-.arr {
-  display: inline-block;
-  width: 18px; height: 18px;
-  border-right: 2px solid var(--muted2);
-  border-bottom: 2px solid var(--muted2);
-  transform: rotate(45deg);
-  animation: bob 0.9s infinite alternate;
-}
 
-@keyframes bob { to { transform: rotate(45deg) translateY(5px); } }
+
+
+ }
 
 /* ── 6. SECTION UTILITIES ───────────────────────────── */
 section { padding: 6rem 6vw; }
@@ -1374,7 +1339,7 @@ body { max-width: 100%; }
     text-align: center;
     padding: 6rem 5vw 5rem;
     gap: 2.5rem;
-    min-height: 100vh;
+    min-height: auto;
   }
 
   /* Show photo on mobile, centered below text */
@@ -1398,8 +1363,7 @@ body { max-width: 100%; }
 
   .hero-sub { margin: 0 auto 2rem; }
 
-  /* Scroll hint — always visible, already centered via left:0/right:0 */
-  .scroll-hint { display: flex; bottom: 1.25rem; }
+  /* Hide scroll hint on mobile — saves space */
 
   /* ABOUT */
   .about-grid { grid-template-columns: 1fr; gap: 2rem; }
