@@ -126,12 +126,12 @@ function setTheme(choice) {
 ══════════════════════════════════════════════════════ */
 const roles = [
   'Data Scientist',
-  'AI Expert',
+  'AI & Data Engineer',
+  'VP of Operations',
   'Data Analyst',
-  'Business Intelligence Analyst',
   'ML Engineer',
+  'Business Intelligence Analyst',
   'Writer & Storyteller',
-  'Insight Strategist',
 ];
 
 // Returns "an" if the word starts with a vowel sound, otherwise "a"
